@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-sm md:text-base lg:text-lg;
+}
+
+h1 {
+  @apply text-4xl md:text-5xl lg:text-[3.5rem];
+}
+h2 {
+  @apply text-3xl md:text-4xl lg:text-5xl;
+}
+h3 {
+  @apply text-lg md:text-xl lg:text-2xl;
+}
+
+#nav-check:checked + ul {
+  @apply h-[19.8125rem];
+}
