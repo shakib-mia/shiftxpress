@@ -42,10 +42,11 @@
       <!-- Navigation bar section -->
       <nav class="container relative flex items-center justify-between py-4">
         <!-- Logo image -->
-        <img src="./assets/images/logo.jpg" alt="logo" />
-
+        <a href="#">
+          <img src="./assets/images/logo.jpg" alt="logo" />
+        </a>
         <!-- Menu button for mobile view -->
-        <label class="lg:hidden" for="nav-check">
+        <label class="md:hidden" for="nav-check">
           <i class="fas fa-bars text-3xl"></i>
         </label>
 
@@ -54,48 +55,48 @@
 
         <!-- Navigation links, displayed as a list. Hidden by default on mobile, expanded on click -->
         <ul
-          class="absolute left-0 top-16 z-[9999] h-0 w-full justify-end divide-y divide-slate-400 overflow-hidden bg-white shadow-xl transition-[height] duration-500 lg:static lg:flex lg:h-auto lg:divide-y-0 lg:shadow-none"
+          class="absolute left-0 top-16 z-[9999] h-0 w-screen justify-end divide-y divide-slate-400 overflow-hidden bg-white shadow-xl transition-[height] duration-500 md:static md:flex md:h-auto md:divide-y-0 md:shadow-none"
         >
           <!-- List of menu items -->
           <li>
             <a
               href="#"
-              class="inline-block w-full p-4 transition hover:bg-primary hover:text-white lg:hover:bg-transparent lg:hover:text-primary"
+              class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
               >Home</a
             >
           </li>
           <li>
             <a
               href="#"
-              class="inline-block w-full p-4 transition hover:bg-primary hover:text-white lg:hover:bg-transparent lg:hover:text-primary"
+              class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
               >About us</a
             >
           </li>
           <li>
             <a
               href="#"
-              class="inline-block w-full p-4 transition hover:bg-primary hover:text-white lg:hover:bg-transparent lg:hover:text-primary"
+              class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
               >Services</a
             >
           </li>
           <li>
             <a
               href="#"
-              class="inline-block w-full p-4 transition hover:bg-primary hover:text-white lg:hover:bg-transparent lg:hover:text-primary"
+              class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
               >Pricing</a
             >
           </li>
           <li>
             <a
               href="#"
-              class="inline-block w-full p-4 transition hover:bg-primary hover:text-white lg:hover:bg-transparent lg:hover:text-primary"
+              class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
               >Contact</a
             >
           </li>
           <li>
             <a
               href="#"
-              class="inline-block w-full p-4 transition hover:bg-primary hover:text-white lg:hover:bg-transparent lg:hover:text-primary"
+              class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
               >Blog</a
             >
           </li>
@@ -172,7 +173,7 @@
               <!-- Input for user's name with animation -->
               <input
                 type="text"
-                class="mt-2 w-full rounded bg-slate-700 px-5 py-4 placeholder:text-slate-400 focus:outline-none lg:mt-6 lg:rounded-lg"
+                class="mt-2 w-full rounded bg-slate-700 px-5 py-4 placeholder:text-slate-400 focus:outline-none lg:mt-3 lg:rounded-lg"
                 placeholder="Your Name"
                 data-aos="fade-left"
                 data-aos-duration="1000"
@@ -269,6 +270,225 @@
             move
           </p>
         </div>
+
+        <div class="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- First Article: Local Moving -->
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <article
+              class="bg-gray-light group rounded-2xl p-8 transition duration-500 hover:shadow-lg"
+            >
+              <!-- Article Number with hover effect to change color -->
+              <h2
+                class="font-bold text-gray transition duration-500 group-hover:text-primary"
+              >
+                01
+              </h2>
+
+              <!-- Article Title -->
+              <h3 class="mb-1 mt-4 font-semibold lg:mb-3 lg:mt-10">
+                Local Moving
+              </h3>
+
+              <!-- Description of the service -->
+              <p class="mb-6">
+                Our team of experts handles your belongings with care, making
+                sure everything arrives safely at your new home.
+              </p>
+
+              <!-- 'See More' link with an underline that expands on hover -->
+              <a
+                href="#"
+                class="group relative flex w-fit flex-col text-primary"
+              >
+                See More
+                <!-- Expanding underline (horizontal line) effect on hover -->
+                <span
+                  class="inline-block h-px w-0 bg-primary transition-all duration-500 group-hover:w-full"
+                ></span>
+              </a>
+            </article>
+          </div>
+
+          <!-- Second Article: Long-Distance Moves -->
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <article
+              class="bg-gray-light group rounded-2xl p-8 transition duration-500 hover:shadow-lg"
+            >
+              <!-- Article Number with hover color change -->
+              <h2
+                class="font-bold text-gray transition duration-500 group-hover:text-primary"
+              >
+                02
+              </h2>
+
+              <!-- Service Title -->
+              <h3 class="mb-1 mt-4 font-semibold lg:mb-3 lg:mt-10">
+                Long-Distance Moves
+              </h3>
+
+              <!-- Service Description -->
+              <p class="mb-6">
+                Our team of experts handles your belongings with care, making
+                sure everything arrives safely at your new home.
+              </p>
+
+              <!-- 'See More' link with an expanding underline -->
+              <a
+                href="#"
+                class="group relative flex w-fit flex-col text-primary"
+              >
+                See More
+                <span
+                  class="inline-block h-px w-0 bg-primary transition-all duration-500 group-hover:w-full"
+                ></span>
+              </a>
+            </article>
+          </div>
+
+          <!-- Third Article: Specialty Item Moving -->
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <article
+              class="bg-gray-light group rounded-2xl p-8 transition duration-500 hover:shadow-lg"
+            >
+              <!-- Article Number with hover color change -->
+              <h2
+                class="font-bold text-gray transition duration-500 group-hover:text-primary"
+              >
+                03
+              </h2>
+
+              <!-- Service Title -->
+              <h3 class="mb-1 mt-4 font-semibold lg:mb-3 lg:mt-10">
+                Specialty Item Moving
+              </h3>
+
+              <!-- Service Description -->
+              <p class="mb-6">
+                Our team of experts handles your belongings with care, making
+                sure everything arrives safely at your new home.
+              </p>
+
+              <!-- 'See More' link with expanding underline -->
+              <a
+                href="#"
+                class="group relative flex w-fit flex-col text-primary"
+              >
+                See More
+                <span
+                  class="inline-block h-px w-0 bg-primary transition-all duration-500 group-hover:w-full"
+                ></span>
+              </a>
+            </article>
+          </div>
+
+          <!-- Fourth Article: Packing and Unpacking -->
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <article
+              class="bg-gray-light group rounded-2xl p-8 transition duration-500 hover:shadow-lg"
+            >
+              <!-- Article Number with hover color change -->
+              <h2
+                class="font-bold text-gray transition duration-500 group-hover:text-primary"
+              >
+                04
+              </h2>
+
+              <!-- Service Title -->
+              <h3 class="mb-1 mt-4 font-semibold lg:mb-3 lg:mt-10">
+                Packing and Unpacking
+              </h3>
+
+              <!-- Service Description -->
+              <p class="mb-6">
+                Our team of experts handles your belongings with care, making
+                sure everything arrives safely at your new home.
+              </p>
+
+              <!-- 'See More' link with expanding underline -->
+              <a
+                href="#"
+                class="group relative flex w-fit flex-col text-primary"
+              >
+                See More
+                <span
+                  class="inline-block h-px w-0 bg-primary transition-all duration-500 group-hover:w-full"
+                ></span>
+              </a>
+            </article>
+          </div>
+
+          <!-- Fifth Article: Storage Solutions -->
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <article
+              class="bg-gray-light group rounded-2xl p-8 transition duration-500 hover:shadow-lg"
+            >
+              <!-- Article Number with hover color change -->
+              <h2
+                class="font-bold text-gray transition duration-500 group-hover:text-primary"
+              >
+                05
+              </h2>
+
+              <!-- Service Title -->
+              <h3 class="mb-1 mt-4 font-semibold lg:mb-3 lg:mt-10">
+                Storage Solutions
+              </h3>
+
+              <!-- Service Description -->
+              <p class="mb-6">
+                Our team of experts handles your belongings with care, making
+                sure everything arrives safely at your new home.
+              </p>
+
+              <!-- 'See More' link with expanding underline -->
+              <a
+                href="#"
+                class="group relative flex w-fit flex-col text-primary"
+              >
+                See More
+                <span
+                  class="inline-block h-px w-0 bg-primary transition-all duration-500 group-hover:w-full"
+                ></span>
+              </a>
+            </article>
+          </div>
+
+          <!-- Sixth Article: Corporate Relocation -->
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <article
+              class="bg-gray-light group rounded-2xl p-8 transition duration-500 hover:shadow-lg"
+            >
+              <!-- Article Number with hover color change -->
+              <h2
+                class="font-bold text-gray transition duration-500 group-hover:text-primary"
+              >
+                06
+              </h2>
+
+              <!-- Service Title -->
+              <h3 class="mb-1 mt-4 font-semibold lg:mb-3 lg:mt-10">
+                Corporate Relocation
+              </h3>
+
+              <!-- Service Description -->
+              <p class="mb-6">
+                Our team of experts handles your belongings with care, making
+                sure everything arrives safely at your new home.
+              </p>
+
+              <!-- 'See More' link with expanding underline -->
+              <a
+                href="#"
+                class="group relative flex w-fit flex-col text-primary"
+              >
+                See More
+                <span
+                  class="inline-block h-px w-0 bg-primary transition-all duration-500 group-hover:w-full"
+                ></span>
+              </a>
+            </article>
+          </div>
+        </div>
       </section>
     </div>
 
@@ -279,7 +499,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
-        once: true,
+        // once: true,
       });
     </script>
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>

@@ -20,7 +20,7 @@ h3 {
 }
 
 #nav-check:checked + ul {
-  @apply h-[19.8125rem];
+  @apply h-[19.8125rem] md:h-fit;
 }
 
 ::-webkit-scrollbar {

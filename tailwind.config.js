@@ -8,7 +8,10 @@ export default {
         secondary: "#FF9C00",
         black: "#2B2B2B",
         white: "#FFFFFF",
-        gray: "#9F9F9F",
+        gray: {
+          DEFAULT: "#9F9F9F",
+          light: "#F9FAF9",
+        },
       },
 
       fontFamily: {
