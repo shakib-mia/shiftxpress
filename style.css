@@ -1,21 +1,36 @@
+@import url("https://fonts.cdnfonts.com/css/segoe-ui-4");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  @apply text-sm md:text-base lg:text-lg;
+  @apply font-poppins text-sm md:text-base lg:text-lg;
 }
 
 h1 {
-  @apply text-4xl md:text-5xl lg:text-[3.5rem];
+  @apply font-segoe-ui text-4xl md:text-5xl lg:text-[3.5rem];
 }
 h2 {
-  @apply text-3xl md:text-4xl lg:text-5xl;
+  @apply font-segoe-ui text-3xl md:text-4xl lg:text-5xl;
 }
 h3 {
-  @apply text-lg md:text-xl lg:text-2xl;
+  @apply font-segoe-ui text-lg md:text-xl lg:text-2xl;
 }
 
 #nav-check:checked + ul {
   @apply h-[19.8125rem];
+}
+
+::-webkit-scrollbar {
+  @apply hidden;
+}
+
+button {
+  @apply rounded-md bg-secondary px-6 py-3 text-white outline-1 outline-offset-2 outline-secondary transition hover:bg-amber-500 focus:outline lg:px-8 lg:py-4;
+}
+
+button.white {
+  @apply rounded-md bg-white px-6 py-3 text-black outline-1 outline-offset-2 outline-white transition hover:bg-slate-200 focus:outline lg:px-8 lg:py-3;
 }

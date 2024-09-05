@@ -10,6 +10,12 @@ export default {
         white: "#FFFFFF",
         gray: "#9F9F9F",
       },
+
+      fontFamily: {
+        "segoe-ui": ["Segoe UI", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        "dm-sans": ["DM Sans", "sans-serif"],
+      },
       container: {
         center: true,
         padding: "1rem",
