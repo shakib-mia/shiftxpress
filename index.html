@@ -12,7 +12,7 @@
     <!-- Main container for the webpage, setting width and hiding overflow on the X-axis -->
     <div class="overflow-x-hidden">
       <!-- Section for displaying a promotional message and contact information -->
-      <div class="bg-primary py-5 text-white">
+      <div class="bg-primary py-5 text-white" id="social">
         <div class="container">
           <!-- Flexbox for aligning the discount message and contact details on different screen sizes -->
           <div
@@ -40,68 +40,73 @@
       </div>
 
       <!-- Navigation bar section -->
-      <nav class="container relative flex items-center justify-between py-4">
-        <!-- Logo image -->
-        <a href="#">
-          <img src="./assets/images/logo.jpg" alt="logo" />
-        </a>
-        <!-- Menu button for mobile view -->
-        <label class="md:hidden" for="nav-check">
-          <i class="fas fa-bars text-3xl"></i>
-        </label>
+      <div
+        class="z-[999999999999999999999] w-screen bg-white transition"
+        id="navbar"
+      >
+        <nav class="container relative flex items-center justify-between py-4">
+          <!-- Logo image -->
+          <a href="#" class="w-1/2 lg:w-1/4">
+            <img src="./assets/images/logo.jpg" class="w-full" alt="logo" />
+          </a>
+          <!-- Menu button for mobile view -->
+          <label class="md:hidden" for="nav-check">
+            <i class="fas fa-bars text-3xl"></i>
+          </label>
 
-        <!-- Checkbox for handling mobile menu toggle -->
-        <input type="checkbox" name="" class="hidden" id="nav-check" />
+          <!-- Checkbox for handling mobile menu toggle -->
+          <input type="checkbox" name="" class="hidden" id="nav-check" />
 
-        <!-- Navigation links, displayed as a list. Hidden by default on mobile, expanded on click -->
-        <ul
-          class="absolute left-0 top-16 z-[9999] h-0 w-screen justify-end divide-y divide-slate-400 overflow-hidden bg-white shadow-xl transition-[height] duration-500 md:static md:flex md:h-auto md:divide-y-0 md:shadow-none"
-        >
-          <!-- List of menu items -->
-          <li>
-            <a
-              href="#"
-              class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
-              >About us</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
-              >Services</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
-              >Pricing</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
-              >Contact</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
-              >Blog</a
-            >
-          </li>
-        </ul>
-      </nav>
+          <!-- Navigation links, displayed as a list. Hidden by default on mobile, expanded on click -->
+          <ul
+            class="absolute left-0 top-16 z-[9999] h-0 w-screen justify-end divide-y divide-slate-400 overflow-hidden bg-white shadow-xl transition-[height] duration-500 md:static md:flex md:h-auto md:divide-y-0 md:shadow-none"
+          >
+            <!-- List of menu items -->
+            <li>
+              <a
+                href="#"
+                class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <!-- Header section with background image and call to action -->
       <header
@@ -109,7 +114,7 @@
         style="background-image: url(&quot;./assets/images/header-bg.jpg&quot;)"
       >
         <div
-          class="container flex flex-col items-center gap-11 py-16 lg:flex-row lg:gap-16"
+          class="container flex flex-col items-center gap-11 pb-16 pt-[9.75rem] lg:flex-row lg:gap-16"
         >
           <!-- Left aside with header content (title, description, button) -->
           <aside class="lg:w-1/2">
@@ -493,7 +498,7 @@
 
       <!-- Reliable Partner Section -->
       <section
-        class="bg-cover py-14 lg:py-28"
+        class="relative bg-cover py-14 lg:py-28"
         style="background-image: url(./assets/images/reliable-partner-bg.jpg)"
       >
         <!-- Section with a background image and padding for vertical spacing -->
@@ -536,7 +541,7 @@
             <!-- Description paragraph with animation effect -->
 
             <div
-              class="mb-6 mt-10 grid grid-cols-2 lg:mb-12 lg:grid-cols-3 lg:divide-x"
+              class="mb-6 mt-10 grid grid-cols-2 md:grid-cols-3 lg:mb-12 lg:divide-x"
             >
               <!-- Grid displaying stats with responsive layout, dividing line for larger screens -->
 
@@ -584,6 +589,154 @@
             </div>
           </aside>
         </div>
+      </section>
+      <!-- Partners -->
+      <div class="relative">
+        <div
+          class="container -bottom-28 left-0 right-0 mx-auto lg:absolute"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div
+            class="flex flex-wrap items-center justify-center gap-6 rounded-xl bg-white py-12 lg:flex-nowrap lg:justify-between lg:px-20 lg:shadow-lg"
+          >
+            <img
+              class="h-fit w-1/4 lg:w-1/5"
+              src="./assets/images/partners/Logo Client 4.jpg"
+              alt=""
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            />
+            <img
+              class="h-fit w-1/4 lg:w-1/5"
+              src="./assets/images/partners/Mask group.jpg"
+              alt=""
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            />
+            <img
+              class="h-fit w-1/4 lg:w-1/5"
+              src="./assets/images/partners/Group 427319811.jpg"
+              alt=""
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            />
+            <img
+              class="h-fit w-1/4 lg:w-1/5"
+              src="./assets/images/partners/Mask group-1.jpg"
+              alt=""
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            />
+            <img
+              class="h-fit w-1/4 lg:w-1/5"
+              src="./assets/images/partners/Logo Client 2.jpg"
+              alt=""
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Simple moving section -->
+      <section
+        class="container grid grid-cols-1 items-center gap-4 py-4 lg:grid-cols-2 lg:gap-9 lg:py-52"
+      >
+        <img
+          src="./assets/images/simple-moving.jpg"
+          alt="simple-moving"
+          class="h-full w-full rounded-xl object-cover"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        />
+
+        <aside>
+          <h2
+            class="mb-4 font-semibold"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <span class="text-secondary">Your Reliable</span> House Moving
+            Partner
+            <span class="text-secondary">For you</span>
+          </h2>
+
+          <h3
+            class="font-bold text-[#2E2E2E]"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            We Make Moving Simple
+          </h3>
+
+          <ul class="mt-7 flex flex-col gap-4">
+            <li
+              class="flex gap-3"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <aside class="font-segoe-ui text-lg font-bold text-[#B0B0B0]">
+                01
+              </aside>
+              <aside class="text-base">
+                Initial Consultation and Assessment: Meet with movers to
+                evaluate your belongings, discuss needs, and get an estimate.
+                They'll assess the scope of work and any special requirements.
+              </aside>
+            </li>
+
+            <li
+              class="flex gap-3"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <aside class="font-segoe-ui text-lg font-bold text-[#B0B0B0]">
+                02
+              </aside>
+              <aside class="text-base">
+                Customized Moving Plan : Receive a tailored plan outlining the
+                timeline, services, and costs. Confirm details, choose
+                additional services if needed, and schedule your move date.
+              </aside>
+            </li>
+
+            <li
+              class="flex gap-3"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <aside class="font-segoe-ui text-lg font-bold text-[#B0B0B0]">
+                03
+              </aside>
+              <aside class="text-base">
+                Packing and Transportation: Either pack yourself or have
+                professionals do it. On moving day, items are carefully loaded,
+                inventoried, and transported to your new home.
+              </aside>
+            </li>
+
+            <li
+              class="flex gap-3"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <aside class="font-segoe-ui text-lg font-bold text-[#B0B0B0]">
+                04
+              </aside>
+              <aside class="text-base">
+                Delivery and Unpacking : Movers unload and place items in
+                designated areas. Unpack yourself or use their unpacking
+                service. Do a final check to ensure everything arrived safely.
+              </aside>
+            </li>
+          </ul>
+        </aside>
       </section>
     </div>
 
