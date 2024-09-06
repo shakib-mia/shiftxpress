@@ -28,9 +28,9 @@ h3 {
 }
 
 button {
-  @apply rounded-md bg-secondary px-6 py-3 text-white outline-1 outline-offset-2 outline-secondary transition hover:bg-amber-500 focus:outline lg:px-8 lg:py-4;
+  @apply rounded-md bg-secondary px-6 py-3 text-white outline-1 outline-offset-2 outline-secondary transition hover:bg-white hover:text-secondary focus:outline lg:px-8 lg:py-4;
 }
 
 button.white {
-  @apply rounded-md bg-white px-6 py-3 text-black outline-1 outline-offset-2 outline-white transition hover:bg-slate-200 focus:outline lg:px-8 lg:py-3;
+  @apply rounded-md bg-white px-6 py-3 text-black outline-1 outline-offset-2 outline-white transition hover:bg-secondary hover:text-white focus:outline lg:px-8 lg:py-3;
 }
