@@ -4,9 +4,19 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>ShiftXpress - Trusted Partner in House Relocation</title>
+    <meta
+      name="description"
+      content="We specialize in providing professional and reliable house moving services tailored to meet your unique needs."
+    />
+    <meta name="title" content="ShiftXpress" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- Main container for the webpage, setting width and hiding overflow on the X-axis -->
@@ -16,13 +26,17 @@
         <div class="container">
           <!-- Flexbox for aligning the discount message and contact details on different screen sizes -->
           <div
-            class="flex flex-col items-center justify-between gap-3 text-center lg:flex-row lg:gap-0 lg:text-left"
+            class="flex flex-col justify-between gap-3 lg:flex-row lg:items-center lg:gap-0"
           >
             <!-- Promotional discount message -->
-            <p>Get A Discount Of Up To 50% For Orders This Month!</p>
+            <p class="text-xs lg:text-base">
+              Get A Discount Of Up To 50% For Orders This Month!
+            </p>
 
             <!-- Flexbox for displaying contact details (phone and email) -->
-            <div class="flex flex-col items-center gap-1 lg:flex-row lg:gap-10">
+            <div
+              class="flex flex-col gap-1 lg:flex-row lg:items-center lg:gap-10"
+            >
               <!-- Phone number with icon -->
               <div class="flex items-center gap-2">
                 <i class="fas fa-phone rotate-90"></i>
@@ -64,42 +78,42 @@
             <!-- List of menu items -->
             <li>
               <a
-                href="#"
+                href="#top"
                 class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
                 >Home</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="#about"
                 class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
                 >About us</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="#services"
                 class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
                 >Services</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="#pricing"
                 class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
                 >Pricing</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="#contact"
                 class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
                 >Contact</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="#blog"
                 class="inline-block w-full p-4 transition hover:bg-primary hover:text-white md:hover:bg-transparent md:hover:text-primary"
                 >Blog</a
               >
@@ -114,7 +128,7 @@
         style="background-image: url(&quot;./assets/images/header-bg.jpg&quot;)"
       >
         <div
-          class="container flex flex-col items-center gap-11 pb-16 pt-[9.75rem] lg:flex-row lg:gap-16"
+          class="container flex flex-col items-center gap-11 pb-14 pt-[7.75rem] lg:flex-row lg:gap-16 lg:pb-16 lg:pt-40"
         >
           <!-- Left aside with header content (title, description, button) -->
           <aside class="lg:w-1/2">
@@ -257,7 +271,7 @@
         </div>
       </header>
 
-      <section class="container py-14 lg:py-28">
+      <section class="container py-14 lg:py-28" id="about">
         <div
           class="grid grid-cols-1 items-center gap-4 lg:grid-cols-2 lg:gap-0"
         >
@@ -276,11 +290,13 @@
           </p>
         </div>
 
-        <div class="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div
+          class="mt-7 grid grid-cols-1 gap-6 md:grid-cols-2 lg:mt-14 lg:grid-cols-3"
+        >
           <!-- First Article: Local Moving -->
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
             <article
-              class="group rounded-2xl bg-gray-light p-8 transition duration-500 hover:shadow-lg"
+              class="group rounded-2xl bg-gray-light p-6 transition duration-500 hover:shadow-lg lg:p-8"
             >
               <!-- Article Number with hover effect to change color -->
               <h2
@@ -317,7 +333,7 @@
           <!-- Second Article: Long-Distance Moves -->
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <article
-              class="group rounded-2xl bg-gray-light p-8 transition duration-500 hover:shadow-lg"
+              class="group rounded-2xl bg-gray-light p-6 transition duration-500 hover:shadow-lg lg:p-8"
             >
               <!-- Article Number with hover color change -->
               <h2
@@ -353,7 +369,7 @@
           <!-- Third Article: Specialty Item Moving -->
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
             <article
-              class="group rounded-2xl bg-gray-light p-8 transition duration-500 hover:shadow-lg"
+              class="group rounded-2xl bg-gray-light p-6 transition duration-500 hover:shadow-lg lg:p-8"
             >
               <!-- Article Number with hover color change -->
               <h2
@@ -389,7 +405,7 @@
           <!-- Fourth Article: Packing and Unpacking -->
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
             <article
-              class="group rounded-2xl bg-gray-light p-8 transition duration-500 hover:shadow-lg"
+              class="group rounded-2xl bg-gray-light p-6 transition duration-500 hover:shadow-lg lg:p-8"
             >
               <!-- Article Number with hover color change -->
               <h2
@@ -425,7 +441,7 @@
           <!-- Fifth Article: Storage Solutions -->
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <article
-              class="group rounded-2xl bg-gray-light p-8 transition duration-500 hover:shadow-lg"
+              class="group rounded-2xl bg-gray-light p-6 transition duration-500 hover:shadow-lg lg:p-8"
             >
               <!-- Article Number with hover color change -->
               <h2
@@ -461,7 +477,7 @@
           <!-- Sixth Article: Corporate Relocation -->
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
             <article
-              class="group rounded-2xl bg-gray-light p-8 transition duration-500 hover:shadow-lg"
+              class="group rounded-2xl bg-gray-light p-6 transition duration-500 hover:shadow-lg lg:p-8"
             >
               <!-- Article Number with hover color change -->
               <h2
@@ -590,20 +606,23 @@
           </aside>
         </div>
       </section>
-      <!-- Partners -->
+      <!-- Partners Section -->
       <div class="relative">
+        <!-- Container for partner logos -->
         <div
           class="container -bottom-28 left-0 right-0 mx-auto lg:absolute"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
+          <!-- Flex container for logos with shadow and padding on large screens -->
           <div
             class="flex flex-wrap items-center justify-center gap-6 rounded-xl bg-white py-12 lg:flex-nowrap lg:justify-between lg:px-20 lg:shadow-lg"
           >
+            <!-- Partner Logos -->
             <img
               class="h-fit w-1/4 lg:w-1/5"
               src="./assets/images/partners/Logo Client 4.jpg"
-              alt=""
+              alt="Partner Logo 1"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="100"
@@ -611,7 +630,7 @@
             <img
               class="h-fit w-1/4 lg:w-1/5"
               src="./assets/images/partners/Mask group.jpg"
-              alt=""
+              alt="Partner Logo 2"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="200"
@@ -619,7 +638,7 @@
             <img
               class="h-fit w-1/4 lg:w-1/5"
               src="./assets/images/partners/Group 427319811.jpg"
-              alt=""
+              alt="Partner Logo 3"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="300"
@@ -627,7 +646,7 @@
             <img
               class="h-fit w-1/4 lg:w-1/5"
               src="./assets/images/partners/Mask group-1.jpg"
-              alt=""
+              alt="Partner Logo 4"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="400"
@@ -635,7 +654,7 @@
             <img
               class="h-fit w-1/4 lg:w-1/5"
               src="./assets/images/partners/Logo Client 2.jpg"
-              alt=""
+              alt="Partner Logo 5"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="500"
@@ -644,10 +663,12 @@
         </div>
       </div>
 
-      <!-- Simple moving section -->
+      <!-- Simple Moving Section -->
       <section
-        class="container grid grid-cols-1 items-center gap-4 py-4 lg:grid-cols-2 lg:gap-9 lg:py-52"
+        class="container grid grid-cols-1 items-center gap-4 pb-14 pt-0 lg:grid-cols-2 lg:gap-9 lg:py-52"
+        id="services"
       >
+        <!-- Image for Simple Moving -->
         <img
           src="./assets/images/simple-moving.jpg"
           alt="simple-moving"
@@ -656,7 +677,9 @@
           data-aos-duration="1000"
         />
 
+        <!-- Content for Simple Moving Section -->
         <aside>
+          <!-- Section Title -->
           <h2
             class="mb-4 font-semibold"
             data-aos="fade-left"
@@ -667,6 +690,7 @@
             <span class="text-secondary">For you</span>
           </h2>
 
+          <!-- Subheading -->
           <h3
             class="font-bold text-[#2E2E2E]"
             data-aos="fade-left"
@@ -675,7 +699,9 @@
             We Make Moving Simple
           </h3>
 
+          <!-- List of Moving Steps -->
           <ul class="mt-7 flex flex-col gap-4">
+            <!-- Step 1: Initial Consultation -->
             <li
               class="flex gap-3"
               data-aos="fade-left"
@@ -691,6 +717,7 @@
               </aside>
             </li>
 
+            <!-- Step 2: Customized Moving Plan -->
             <li
               class="flex gap-3"
               data-aos="fade-left"
@@ -706,6 +733,7 @@
               </aside>
             </li>
 
+            <!-- Step 3: Packing and Transportation -->
             <li
               class="flex gap-3"
               data-aos="fade-left"
@@ -721,6 +749,7 @@
               </aside>
             </li>
 
+            <!-- Step 4: Delivery and Unpacking -->
             <li
               class="flex gap-3"
               data-aos="fade-left"
@@ -738,6 +767,518 @@
           </ul>
         </aside>
       </section>
+
+      <!-- Section for highlighting why the company is a top choice for house moves -->
+      <section class="bg-primary text-white" id="pricing">
+        <div
+          class="container grid grid-cols-1 items-center gap-4 py-14 lg:grid-cols-2 lg:gap-9 lg:py-40"
+        >
+          <!-- First column: contains the heading, paragraph, and features list -->
+          <aside>
+            <!-- Main heading for the section -->
+            <h2
+              class="font-semibold lg:w-5/6"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              Why We're Your <span class="text-secondary">Top Choice</span> for
+              House Moves
+            </h2>
+
+            <!-- Supporting paragraph describing the company's dedication -->
+            <p
+              class="mb-8 mt-5 text-base"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              At ShiftXpress, we are dedicated to transforming the moving
+              experience into a seamless and stress-free journey. With years of
+              expertise in the moving industry, we understand that relocating
+              can be a daunting task. That’s why we offer customized moving
+              solutions that cater to your unique needs.
+            </p>
+
+            <!-- List of features/advantages of using the service -->
+            <ul class="flex flex-col gap-7 lg:w-5/6">
+              <!-- First feature: Professional Team with an icon -->
+              <li
+                class="flex flex-col gap-6 lg:flex-row lg:items-center"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                <!-- Icon representing the feature -->
+                <img
+                  src="./assets/images/top-choices/Icon.jpg"
+                  alt="Professional Team"
+                  class="w-fit rounded-lg"
+                />
+                <!-- Text describing the feature -->
+                <aside>
+                  <h3 class="mb-1 text-xl font-bold lg:mb-2 lg:text-2xl">
+                    Professional Team
+                  </h3>
+                  <p class="font-poppins text-sm lg:text-base">
+                    Our experienced movers handle your belongings with care.
+                  </p>
+                </aside>
+              </li>
+
+              <!-- Second feature: Customized Solutions with an icon -->
+              <li
+                class="flex flex-col gap-6 lg:flex-row lg:items-center"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                <img
+                  src="./assets/images/top-choices/Icon-1.jpg"
+                  alt="Customized Solutions"
+                  class="w-fit rounded-lg"
+                />
+                <aside>
+                  <h3 class="mb-1 text-xl font-bold lg:mb-2 lg:text-2xl">
+                    Customized Solutions
+                  </h3>
+                  <p class="font-poppins text-sm lg:text-base">
+                    We tailor our services to meet your specific moving needs.
+                  </p>
+                </aside>
+              </li>
+
+              <!-- Third feature: Reliable Timing with an icon -->
+              <li
+                class="flex flex-col gap-6 lg:flex-row lg:items-center"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                <img
+                  src="./assets/images/top-choices/Icon-2.jpg"
+                  alt="Reliable Timing"
+                  class="w-fit rounded-lg"
+                />
+                <aside>
+                  <h3 class="mb-1 text-xl font-bold lg:mb-2 lg:text-2xl">
+                    Reliable Timing
+                  </h3>
+                  <p class="font-poppins text-sm lg:text-base">
+                    We ensure your move is completed on schedule.
+                  </p>
+                </aside>
+              </li>
+            </ul>
+          </aside>
+
+          <!-- Second column: image with an overlay for customer satisfaction stats -->
+          <aside class="relative">
+            <!-- Overlay displaying customer satisfaction percentage with stars -->
+            <div
+              class="absolute -left-4 top-12 z-50 flex items-center gap-3 rounded-full bg-white px-5 py-2 font-segoe-ui lg:-left-9 lg:top-24 lg:px-10 lg:py-5"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <!-- Customer satisfaction percentage -->
+              <p class="text-2xl font-bold text-primary lg:text-[2rem]">
+                90<span class="text-gray">%</span>
+              </p>
+
+              <!-- Star ratings for satisfaction -->
+              <aside>
+                <p class="mb-1 text-xs font-semibold text-black lg:text-sm">
+                  Customer Satisfaction
+                </p>
+                <div class="flex gap-0 text-xl">
+                  <i class="fa fa-star text-secondary"></i>
+                  <i class="fa fa-star text-secondary"></i>
+                  <i class="fa fa-star text-secondary"></i>
+                  <i class="fa fa-star text-secondary"></i>
+                  <i class="fa fa-star text-secondary"></i>
+                </div>
+              </aside>
+            </div>
+
+            <!-- Main image representing customer satisfaction -->
+            <img
+              src="./assets/images/customer-satisfaction.jpg"
+              alt="customer-satisfaction"
+              class="rounded-xl"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            />
+          </aside>
+        </div>
+      </section>
+
+      <section class="container py-14 lg:py-32" id="blog">
+        <div class="mb-16 grid grid-cols-1 items-center gap-4 lg:grid-cols-2">
+          <h2
+            class="font-semibold"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            The Proof of Our Moving Excellence
+          </h2>
+
+          <aside
+            class="lg:ml-auto"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <div class="flex gap-4 font-poppins">
+              <aside>
+                <h2 class="font-poppins">122K+</h2>
+                <p class="text-base text-gray">Total Customers</p>
+              </aside>
+              <div
+                class="hidden h-fit items-center gap-1 rounded-full bg-primary px-4 py-2 text-white lg:flex"
+              >
+                <p class="text-xs">24%</p>
+                <i class="far fa-arrow-alt-circle-up"></i>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide relative p-4">
+              <div
+                class="inset-0 rounded-[1.25rem] p-4 shadow-[4px_4px_22px_0_#00000014] md:p-8 lg:p-11 lg:shadow-[0px_4px_20px_0_#00000014]"
+              >
+                <img
+                  src="./assets/images/testimonials/Image.jpg"
+                  alt="testimonial-1"
+                />
+                <div class="mb-3 mt-6 flex gap-1">
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                </div>
+
+                <p class="mb-4 font-poppins text-base lg:mb-10">
+                  From packing to unloading, ShiftExpress was fantastic. Their
+                  attention to detail ensured that nothing was damaged during
+                  the move. They really took the stress out of relocating. Great
+                  service!
+                </p>
+
+                <hr />
+
+                <p class="mt-3 font-dm-sans text-base text-primary lg:mt-6">
+                  Michael Davis
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide relative p-4">
+              <div
+                class="inset-0 rounded-[1.25rem] p-4 shadow-[4px_4px_22px_0_#00000014] md:p-8 lg:p-11 lg:shadow-[0px_4px_20px_0_#00000014]"
+              >
+                <img
+                  src="./assets/images/testimonials/Image-1.jpg"
+                  alt="testimonial-1"
+                />
+                <div class="mb-3 mt-6 flex gap-1">
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                </div>
+
+                <p class="mb-4 font-poppins text-base lg:mb-10">
+                  I was impressed with the efficiency and professionalism of
+                  ShiftExpress. The crew was friendly and worked quickly, making
+                  our move smooth and hassle-free. Would definitely use their
+                  services again!
+                </p>
+
+                <hr />
+
+                <p class="mt-3 font-dm-sans text-base text-primary lg:mt-6">
+                  Emily Clark
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide relative p-4">
+              <div
+                class="inset-0 rounded-[1.25rem] p-4 shadow-[4px_4px_22px_0_#00000014] md:p-8 lg:p-11 lg:shadow-[0px_4px_20px_0_#00000014]"
+              >
+                <img
+                  src="./assets/images/testimonials/Image-2.jpg"
+                  alt="testimonial-1"
+                />
+                <div class="mb-3 mt-6 flex gap-1">
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                </div>
+
+                <p class="mb-4 font-poppins text-base lg:mb-10">
+                  ShiftExpress made our move seamless! The team was punctual,
+                  professional, and handled all our belongings with care. Moving
+                  can be stressful, but they made it so much easier. Highly
+                  recommend!
+                </p>
+
+                <hr />
+
+                <p class="mt-3 font-dm-sans text-base text-primary lg:mt-6">
+                  Sarah Thompson
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide relative p-4">
+              <div
+                class="inset-0 rounded-[1.25rem] p-4 shadow-[4px_4px_22px_0_#00000014] md:p-8 lg:p-11 lg:shadow-[0px_4px_20px_0_#00000014]"
+              >
+                <img
+                  src="./assets/images/testimonials/Image.jpg"
+                  alt="testimonial-1"
+                />
+                <div class="mb-3 mt-6 flex gap-1">
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                </div>
+
+                <p class="mb-4 font-poppins text-base lg:mb-10">
+                  From packing to unloading, ShiftExpress was fantastic. Their
+                  attention to detail ensured that nothing was damaged during
+                  the move. They really took the stress out of relocating. Great
+                  service!
+                </p>
+
+                <hr />
+
+                <p class="mt-3 font-dm-sans text-base text-primary lg:mt-6">
+                  Michael Davis
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide relative p-4">
+              <div
+                class="inset-0 rounded-[1.25rem] p-4 shadow-[4px_4px_22px_0_#00000014] md:p-8 lg:p-11 lg:shadow-[0px_4px_20px_0_#00000014]"
+              >
+                <img
+                  src="./assets/images/testimonials/Image-1.jpg"
+                  alt="testimonial-1"
+                />
+                <div class="mb-3 mt-6 flex gap-1">
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                </div>
+
+                <p class="mb-4 font-poppins text-base lg:mb-10">
+                  I was impressed with the efficiency and professionalism of
+                  ShiftExpress. The crew was friendly and worked quickly, making
+                  our move smooth and hassle-free. Would definitely use their
+                  services again!
+                </p>
+
+                <hr />
+
+                <p class="mt-3 font-dm-sans text-base text-primary lg:mt-6">
+                  Emily Clark
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide relative p-4">
+              <div
+                class="inset-0 rounded-[1.25rem] p-4 shadow-[4px_4px_22px_0_#00000014] md:p-8 lg:p-11 lg:shadow-[0px_4px_20px_0_#00000014]"
+              >
+                <img
+                  src="./assets/images/testimonials/Image-2.jpg"
+                  alt="testimonial-1"
+                />
+                <div class="mb-3 mt-6 flex gap-1">
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                </div>
+
+                <p class="mb-4 font-poppins text-base lg:mb-10">
+                  ShiftExpress made our move seamless! The team was punctual,
+                  professional, and handled all our belongings with care. Moving
+                  can be stressful, but they made it so much easier. Highly
+                  recommend!
+                </p>
+
+                <hr />
+
+                <p class="mt-3 font-dm-sans text-base text-primary lg:mt-6">
+                  Sarah Thompson
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-cover py-14 text-white lg:py-32"
+        style="background-image: url(./assets/images/pre-footer-bg.jpg)"
+        id="contact"
+      >
+        <div class="container">
+          <div class="lg:w-7/12">
+            <h2
+              class="font-semibold"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              Let Us Handle the Heavy Lifting. Schedule Your Move!
+            </h2>
+
+            <div data-aos="fade-right" data-aos-duration="1000" class="mt-6">
+              <button class="px-11 py-4">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="container flex flex-col gap-7 py-14 lg:flex-row lg:gap-0">
+        <aside class="lg:w-1/2">
+          <div class="lg:w-3/4">
+            <img src="./assets/images/logo.jpg" alt="logo" />
+            <p class="mt-6">
+              Faucibus quis fringilla scelerisque dui. Amet parturient dui
+              venenatis amet sagittis viverra vel tincidunt. Orci tincidunt.
+            </p>
+
+            <div class="mt-6 flex items-center gap-4">
+              <a
+                href="https://www.facebook.com/RadditoLLC"
+                class="text-2xl text-primary transition hover:scale-125"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/radditollc"
+                class="text-2xl text-primary transition hover:scale-125"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/company/radditollc/"
+                class="text-2xl text-primary transition hover:scale-125"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+
+              <a
+                href="https://twitter.com/RadditoLLC"
+                class="text-2xl text-primary transition hover:scale-125"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </aside>
+
+        <aside
+          class="flex w-full flex-col gap-7 lg:w-1/2 lg:flex-row lg:gap-14"
+        >
+          <div>
+            <h3 class="mb-2 font-segoe-ui font-semibold text-primary lg:mb-5">
+              Company
+            </h3>
+            <ul class="flex flex-col gap-2">
+              <li>
+                <a href="#" class="transition hover:text-primary">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="transition hover:text-primary"
+                  >Our Partners</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition hover:text-primary">Careers</a>
+              </li>
+              <li>
+                <a href="#" class="transition hover:text-primary"
+                  >Our Network</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="mb-2 font-segoe-ui font-semibold text-primary lg:mb-5">
+              Resources
+            </h3>
+            <ul class="flex flex-col gap-2">
+              <li>
+                <a href="#" class="transition hover:text-primary"
+                  >Packing Supplies</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition hover:text-primary">Faqs</a>
+              </li>
+              <li>
+                <a href="#" class="transition hover:text-primary"
+                  >Pricing and Quotes</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition hover:text-primary"
+                  >Tips and Guides</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="mb-2 font-segoe-ui font-semibold text-primary lg:mb-5">
+              Help
+            </h3>
+            <ul class="flex flex-col gap-2">
+              <li>
+                <a href="#" class="transition hover:text-primary"
+                  >Customer Support</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition hover:text-primary"
+                  >Delivery Details</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition hover:text-primary"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition hover:text-primary"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </footer>
+
+      <hr class="h-[2px] bg-black" />
+
+      <div class="py-8 text-center font-dm-sans text-base">
+        Copyright &copy;<span id="year"></span> Designed and Developed by
+        <a href="https://raddito.net/" class="font-semibold text-primary"
+          >Raddito LLC</a
+        >
+      </div>
     </div>
 
     <script
@@ -747,10 +1288,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
-        // once: true,
+        once: true,
       });
+      document.getElementById("year").innerText = new Date().getFullYear();
     </script>
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>

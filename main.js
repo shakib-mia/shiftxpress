@@ -1,7 +1,17 @@
+// Importing Lenis and Swiper
+// import Lenis from "lenis";
+
+// DOMContentLoaded to ensure the DOM is fully loaded
+// document.addEventListener("DOMContentLoaded", function () {
+// Initialize Lenis for smooth scrolling
 const lenis = new Lenis();
 
-lenis.on("scroll", (e) => {});
+// Lenis scroll event listener (you can extend it with more logic if needed)
+lenis.on("scroll", (e) => {
+  // console.log("Lenis scroll:", e);
+});
 
+// Request animation frame to keep Lenis updating
 function raf(time) {
   lenis.raf(time);
   requestAnimationFrame(raf);
@@ -9,19 +19,17 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
-// console.log(document.getElementById("promotional").clientHeight);
-
-// const promotionalHeight = document.getElementById("promotional").clientHeight;
+// Navbar scroll direction tracking logic
 const navbar = document.getElementById("navbar");
+navbar.style.position = "fixed";
+navbar.style.top = `${document.getElementById("social").clientHeight}px`;
 
 function createScrollDirectionTracker() {
   let scrollDirection = "up";
   let lastScrollY = 0;
 
   function handleScroll() {
-    const currentScrollY = window.pageYOffset;
-
-    // console.log();
+    const currentScrollY = lenis.scroll || window.pageYOffset; // Using Lenis scroll
 
     if (currentScrollY > lastScrollY) {
       scrollDirection = "down";
@@ -31,40 +39,30 @@ function createScrollDirectionTracker() {
 
     lastScrollY = currentScrollY;
 
+    // Hide navbar on scroll down
     if (scrollDirection === "down") {
-      document.getElementById("navbar").style.top = "-10rem";
-
-      document.getElementById("navbar").style.transition = "all 0.5s ease";
-
-      //   document
-      //     .getElementById("navbar")
-      //     .classList.add("shadow-[0_0_80px_0_#2B245D21]");
+      navbar.style.top = "-10rem";
+      navbar.style.transition = "all 0.5s ease";
     } else {
       if (currentScrollY > document.getElementById("social").clientHeight) {
-        // console.log(true);
-        document.getElementById("navbar").style.top = 0;
+        navbar.style.top = "0";
       } else {
-        document.getElementById("navbar").style.top =
-          document.getElementById("social").clientHeight + "px";
-        document.getElementById("navbar").style.transition = "all 0.5s ease";
+        navbar.style.top = `${document.getElementById("social").clientHeight}px`;
+        navbar.style.transition = "all 0.5s ease";
       }
     }
 
+    // Box shadow and fixed position on scroll
     if (currentScrollY > 0) {
-      document.getElementById("navbar").style.boxShadow =
-        "0 0 20px 0 #2B245D21";
-      document.getElementById("navbar").style.position = "fixed";
-      // document.getElementById("navbar").style.backgroundColor = "#FFF";
+      navbar.style.boxShadow = "0 0 20px 0 #2B245D21";
+      navbar.style.position = "fixed";
     } else {
-      document.getElementById("navbar").style.boxShadow = "none";
-      // document.getElementById("navbar").style.position = "absolute";
-      document.getElementById("navbar").style.top =
-        document.getElementById("social").clientHeight + "px";
-      // document.getElementById("navbar").style.backgroundColor = "#FFF0";
+      navbar.style.boxShadow = "none";
+      navbar.style.top = `${document.getElementById("social").clientHeight}px`;
     }
   }
-  // console.log(scrollDirection);
 
+  // Listen to scroll events
   window.addEventListener("scroll", handleScroll);
 
   return {
@@ -76,3 +74,38 @@ function createScrollDirectionTracker() {
 }
 
 createScrollDirectionTracker();
+// }
+
+var swiper = new Swiper(".mySwiper", {
+  loop: true, // Optional: Enables continuous loop mode
+  // slidesPerView: 3,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true, // Enables pagination to be clickable
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 3000, // Slide every 3 seconds
+  },
+
+  // autoplay: false,
+
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      // spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 2,
+      // spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 3,
+      // spaceBetween: 30,
+    },
+  },
+});
