@@ -10,13 +10,13 @@ body {
 }
 
 h1 {
-  @apply font-segoe-ui text-4xl md:text-5xl lg:text-[3.5rem];
+  @apply font-segoe-ui text-4xl leading-[120%] md:text-5xl lg:text-[3.5rem];
 }
 h2 {
-  @apply font-segoe-ui text-3xl md:text-4xl lg:text-5xl;
+  @apply font-segoe-ui text-3xl leading-[120%] md:text-4xl lg:text-5xl;
 }
 h3 {
-  @apply font-segoe-ui text-lg md:text-xl lg:text-2xl;
+  @apply font-segoe-ui text-lg leading-[120%] md:text-xl lg:text-2xl;
 }
 
 #nav-check:checked + ul {

@@ -22,7 +22,7 @@
     <!-- Main container for the webpage, setting width and hiding overflow on the X-axis -->
     <div class="overflow-x-hidden">
       <!-- Section for displaying a promotional message and contact information -->
-      <div class="bg-primary py-5 text-white" id="social">
+      <div class="hidden bg-primary py-5 text-white lg:block" id="social">
         <div class="container">
           <!-- Flexbox for aligning the discount message and contact details on different screen sizes -->
           <div
@@ -799,7 +799,9 @@
             </p>
 
             <!-- List of features/advantages of using the service -->
-            <ul class="flex flex-col gap-7 lg:w-5/6">
+            <ul
+              class="mx-auto flex w-4/5 flex-col items-center gap-7 text-center lg:mx-0 lg:w-5/6 lg:text-left"
+            >
               <!-- First feature: Professional Team with an icon -->
               <li
                 class="flex flex-col gap-6 lg:flex-row lg:items-center"
@@ -810,7 +812,7 @@
                 <img
                   src="./assets/images/top-choices/Icon.jpg"
                   alt="Professional Team"
-                  class="w-fit rounded-lg"
+                  class="mx-auto w-fit rounded-lg lg:mx-0"
                 />
                 <!-- Text describing the feature -->
                 <aside>
@@ -832,7 +834,7 @@
                 <img
                   src="./assets/images/top-choices/Icon-1.jpg"
                   alt="Customized Solutions"
-                  class="w-fit rounded-lg"
+                  class="mx-auto w-fit rounded-lg lg:mx-0"
                 />
                 <aside>
                   <h3 class="mb-1 text-xl font-bold lg:mb-2 lg:text-2xl">
@@ -853,7 +855,7 @@
                 <img
                   src="./assets/images/top-choices/Icon-2.jpg"
                   alt="Reliable Timing"
-                  class="w-fit rounded-lg"
+                  class="mx-auto w-fit rounded-lg lg:mx-0"
                 />
                 <aside>
                   <h3 class="mb-1 text-xl font-bold lg:mb-2 lg:text-2xl">
@@ -1295,6 +1297,6 @@
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="./main.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
