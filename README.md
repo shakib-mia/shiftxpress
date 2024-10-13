@@ -1,4 +1,5 @@
-# ShiftXpress - Your Trusted Partner in House Relocation
+# ShiftXpress
+## Home Shifting Website with ViteJS and TailwindCSS
 
 ShiftXpress specializes in providing professional and reliable house moving services, tailored to meet your unique needs. Built with Vite and Tailwind CSS, this responsive website showcases our comprehensive moving services, ensuring a seamless and stress-free relocation experience.
 
